@@ -4,7 +4,7 @@ FlexiCart is a pure vanilla HTML, CSS, and JavaScript architecture utility that 
 
 ## Preview
 ![](flex.png)
-
+--------------------------------------------------------------------------
 ##  Technical Highlights
 *  **Algorithmic Pricing Matrices:** Computes real-time dynamic sub-totals, variable coupon percentage reductions, and a flat $18\%$ tax rate bracket concurrently.
 *  **Encapsulated Memory Array State:** Manages all client interface outputs strictly through unified functional data updates.
