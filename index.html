@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexiCart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1> FlexiCart Engine</h1>
+        <p>A client-side reactive e-commerce state manager & checkout calculation playground.</p>
+    </header>
+
+    <main class="cart-container">
+        
+        
+        <section class="catalog-section">
+            <h2>Available Products</h2>
+            <div class="products-grid" id="catalogGrid">
+                
+            </div>
+        </section>
+
+        
+        <section class="checkout-section">
+            <h2>Your Order Summary</h2>
+            
+            
+            <div id="cartItemsList" class="cart-items-list">
+                <p class="empty-msg">Your cart is currently empty. Add items to calculate totals!</p>
+            </div>
+
+            
+            <div class="promo-box">
+                <label for="promoInput">Apply Promo Coupon</label>
+                <div class="promo-row">
+                    <input type="text" id="promoInput" placeholder="Try 'SAVE10' or 'DEV20'">
+                    <button id="applyPromoBtn">Apply</button>
+                </div>
+                <p id="promoFeedback" class="promo-feedback"></p>
+            </div>
+
+          
+            <div class="ledger-box">
+                <div class="ledger-row">
+                    <span>Subtotal</span>
+                    <span id="subtotalVal">$0.00</span>
+                </div>
+                <div class="ledger-row promo-discount-row" id="discountRow" style="display: none;">
+                    <span>Discount Applied</span>
+                    <span id="discountVal">-$0.00</span>
+                </div>
+                <div class="ledger-row">
+                    <span>GST / Estimated Tax (18%)</span>
+                    <span id="taxVal">$0.00</span>
+                </div>
+                <hr class="ledger-divider">
+                <div class="ledger-row total-row">
+                    <span>Total Amount Due</span>
+                    <span id="totalVal">$0.00</span>
+                </div>
+            </div>
+
+            <button id="checkoutBtn" class="checkout-btn" disabled>Proceed to Simulation Checkout </button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
