@@ -1,5 +1,5 @@
 # FlexiCart — Advanced Client-Side Checkout Engine
-
+-------------------------------------------------------
 FlexiCart is a pure vanilla HTML, CSS, and JavaScript architecture utility that builds a responsive state-driven shopping cart pipeline. It maps catalog loops into document views, processes dynamic data increments, computes compound financial numbers, and hosts an active coupon matching sandbox layout.
 
 ## Preview
