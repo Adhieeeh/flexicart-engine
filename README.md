@@ -11,3 +11,4 @@ FlexiCart is a pure vanilla HTML, CSS, and JavaScript architecture utility that 
 
 ##  Execution Instructions
 1. Open `index.html` straight inside any web browser or hook it up using a VS Code Live Server extension framework.
+------------------------------------------------------------------------------
